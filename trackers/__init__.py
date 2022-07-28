@@ -4,16 +4,7 @@ import torch
 from os.path import join
 from os import getcwd
 
-
-
-
-
-
-
-
-
-
-ALPHAPOSE_ROOT = join(getcwd(), 'AlphaPose')
+ALPHAPOSE_ROOT = join(getcwd(), 'AlphaPose-tau-anomaly')
 
 def track(tracker,args,orig_img,inps,boxes,hm,cropped_boxes,im_name,scores):
     hm = hm.cpu().data.numpy()

@@ -6,8 +6,9 @@
 import torch
 from torch import nn
 import torch.nn.functional as F
-from ReidModels.ResNet import build_resnet_backbone
-from ReidModels.bn_linear import BNneckLinear
+
+from trackers.ReidModels.ResNet import build_resnet_backbone
+from trackers.ReidModels.bn_linear import BNneckLinear
 class SpatialAttn(nn.Module):
     """Spatial Attention Layer"""
     def __init__(self):

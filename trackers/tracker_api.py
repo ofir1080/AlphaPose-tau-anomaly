@@ -17,6 +17,8 @@ import torch
 import torch.nn.functional as F
 import torch.nn as nn
 
+# sys.path.insert(0, f'{os.getcwd()}/AlphaPose')
+# print('------------->', f'{os.getcwd()}/AlphaPose')
 from .utils.utils import *
 from .utils.log import logger
 from .utils.kalman_filter import KalmanFilter
