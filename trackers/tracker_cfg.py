@@ -1,6 +1,7 @@
 from os.path import join
 from easydict import EasyDict as edict
-from AlphaPose.detector import ALPHAPOSE_ROOT
+from detector import ALPHAPOSE_ROOT
+
 
 cfg = edict()
 cfg.nid = 1000

@@ -737,7 +737,7 @@ def load_pretrained_weights(model, weight_path):
         )
     else:
         print(
-            'loading reid model from {}...'.
+            'Loading reid model from {}...'.
             format(weight_path)
         )
         '''
