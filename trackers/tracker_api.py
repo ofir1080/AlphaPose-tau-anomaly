@@ -203,7 +203,8 @@ class Tracker(object):
         elif self.opt.arch == "osnet_ain":
             m = osnet_ain_x1_0(num_classes=1,pretrained=False)
         
-        self.model = nn.DataParallel(m,device_ids=args.gpus).to(args.device).eval()
+        # self.model = nn.DataParallel(m,device_ids=args.gpus).to(args.device).eval()
+        self.model = m.to(args.device).eval()
         
         load_pretrained_weights(self.model,self.opt.loadmodel)
         self.tracked_stracks = []  # type: list[STrack]
